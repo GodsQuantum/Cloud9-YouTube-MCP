@@ -1,0 +1,4648 @@
+{
+  "youtube_abuseReports_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "abuse_report_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "account": {
+        "type": "string"
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "abuse_report_body"
+    ],
+    "type": "object"
+  },
+  "youtube_activities_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "home": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "default": 5,
+        "type": "integer"
+      },
+      "mine": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "default": "snippet,contentDetails",
+        "type": "string"
+      },
+      "published_after": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "published_before": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "region_code": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_analytics_groupItems_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_analytics_groupItems_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "group_item_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "group_item_body"
+    ],
+    "type": "object"
+  },
+  "youtube_analytics_groupItems_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "group_id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "group_id"
+    ],
+    "type": "object"
+  },
+  "youtube_analytics_groups_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_analytics_groups_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "group_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "group_body"
+    ],
+    "type": "object"
+  },
+  "youtube_analytics_groups_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "mine": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_analytics_groups_update": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "group_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "group_body"
+    ],
+    "type": "object"
+  },
+  "youtube_analytics_reports_describe": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_analytics_reports_query": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "currency": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "dimensions": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "end_date": {
+        "type": "string"
+      },
+      "extra_params": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "filters": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "ids": {
+        "type": "string"
+      },
+      "include_historical_channel_data": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "metrics": {
+        "type": "string"
+      },
+      "sort": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "start_date": {
+        "type": "string"
+      },
+      "start_index": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "ids",
+      "metrics",
+      "start_date",
+      "end_date"
+    ],
+    "type": "object"
+  },
+  "youtube_captions_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "caption_id": {
+        "type": "string"
+      },
+      "on_behalf_of": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "caption_id"
+    ],
+    "type": "object"
+  },
+  "youtube_captions_download": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "caption_id": {
+        "type": "string"
+      },
+      "on_behalf_of": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "output_path": {
+        "type": "string"
+      },
+      "tfmt": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "tlang": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "caption_id",
+      "output_path"
+    ],
+    "type": "object"
+  },
+  "youtube_captions_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "caption_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "caption_file_path": {
+        "type": "string"
+      },
+      "on_behalf_of": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "sync": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "caption_body",
+      "caption_file_path"
+    ],
+    "type": "object"
+  },
+  "youtube_captions_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "video_id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "video_id"
+    ],
+    "type": "object"
+  },
+  "youtube_captions_update": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "caption_body": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "caption_file_path": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "caption_id": {
+        "type": "string"
+      },
+      "on_behalf_of": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "sync": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "caption_id"
+    ],
+    "type": "object"
+  },
+  "youtube_channelSections_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_channelSections_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "section_body": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "section_body"
+    ],
+    "type": "object"
+  },
+  "youtube_channelSections_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "hl": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "mine": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_channelSections_update": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "section_body": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "section_body"
+    ],
+    "type": "object"
+  },
+  "youtube_channel_banners_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "banner_file_path": {
+        "type": "string"
+      },
+      "channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "banner_file_path"
+    ],
+    "type": "object"
+  },
+  "youtube_channels_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "category_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "for_handle": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "for_username": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "hl": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "managed_by_me": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "default": 5,
+        "type": "integer"
+      },
+      "mine": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "default": "snippet,contentDetails,statistics",
+        "type": "string"
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_channels_update": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "channel_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "channel_body"
+    ],
+    "type": "object"
+  },
+  "youtube_commentThreads_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "part": {
+        "default": "snippet",
+        "type": "string"
+      },
+      "thread_body": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    },
+    "required": [
+      "account",
+      "thread_body"
+    ],
+    "type": "object"
+  },
+  "youtube_commentThreads_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "all_threads_related_to_channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "default": 20,
+        "type": "integer"
+      },
+      "moderation_status": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "order": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "default": "snippet,replies",
+        "type": "string"
+      },
+      "search_terms": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "text_format": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_comments_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_comments_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "comment_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "comment_body"
+    ],
+    "type": "object"
+  },
+  "youtube_comments_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "default": 20,
+        "type": "integer"
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "parent_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "text_format": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_comments_markAsSpam": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_comments_setModerationStatus": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "ban_author": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "id": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "moderation_status": {
+        "enum": [
+          "heldForReview",
+          "published",
+          "rejected"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "id",
+      "moderation_status"
+    ],
+    "type": "object"
+  },
+  "youtube_comments_update": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "comment_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "comment_body"
+    ],
+    "type": "object"
+  },
+  "youtube_i18nLanguages_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "hl": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "default": "snippet",
+        "type": "string"
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_i18nRegions_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "hl": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "default": "snippet",
+        "type": "string"
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_liveBroadcasts_bind": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "stream_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "id",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_liveBroadcasts_cuepoint": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "cuepoint_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "id",
+      "cuepoint_body"
+    ],
+    "type": "object"
+  },
+  "youtube_liveBroadcasts_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_liveBroadcasts_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "broadcast_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "broadcast_body"
+    ],
+    "type": "object"
+  },
+  "youtube_liveBroadcasts_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "broadcast_status": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "broadcast_type": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "default": 5,
+        "type": "integer"
+      },
+      "mine": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "default": "id,snippet,contentDetails,status",
+        "type": "string"
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_liveBroadcasts_transition": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "broadcast_status": {
+        "enum": [
+          "testing",
+          "live",
+          "complete"
+        ],
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "id",
+      "broadcast_status",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_liveBroadcasts_update": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "broadcast_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "broadcast_body"
+    ],
+    "type": "object"
+  },
+  "youtube_liveChatBans_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_liveChatBans_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "ban_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "ban_body"
+    ],
+    "type": "object"
+  },
+  "youtube_liveChatMessages_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_liveChatMessages_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "message_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "message_body"
+    ],
+    "type": "object"
+  },
+  "youtube_liveChatMessages_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "hl": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "live_chat_id": {
+        "type": "string"
+      },
+      "max_results": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "profile_image_size": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "live_chat_id",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_liveChatMessages_transition": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "status": {
+        "enum": [
+          "statusUnspecified",
+          "closed"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "id",
+      "status"
+    ],
+    "type": "object"
+  },
+  "youtube_liveChatModerators_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_liveChatModerators_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "moderator_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "moderator_body"
+    ],
+    "type": "object"
+  },
+  "youtube_liveChatModerators_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "live_chat_id": {
+        "type": "string"
+      },
+      "max_results": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "live_chat_id",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_liveStreams_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_liveStreams_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "stream_body": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "stream_body"
+    ],
+    "type": "object"
+  },
+  "youtube_liveStreams_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "default": 5,
+        "type": "integer"
+      },
+      "mine": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "default": "id,snippet,cdn,status",
+        "type": "string"
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_liveStreams_update": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "stream_body": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "stream_body"
+    ],
+    "type": "object"
+  },
+  "youtube_members_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "filter_by_member_channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "has_access_to_level": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "mode": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_membershipsLevels_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_playlistImages_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_playlistImages_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "image_body": {
+        "additionalProperties": false,
+        "description": "Stable playlistImage request body model.",
+        "properties": {
+          "id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "kind": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "snippet": {
+            "anyOf": [
+              {
+                "additionalProperties": false,
+                "description": "Snippet fields for a playlistImage resource.",
+                "properties": {
+                  "height": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "playlistId": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "type": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "width": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  }
+                },
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "type": "object"
+      },
+      "image_file_path": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "image_body",
+      "image_file_path"
+    ],
+    "type": "object"
+  },
+  "youtube_playlistImages_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "max_results": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "parent": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_playlistImages_update": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "image_body": {
+        "additionalProperties": false,
+        "description": "Stable playlistImage request body model.",
+        "properties": {
+          "id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "kind": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "snippet": {
+            "anyOf": [
+              {
+                "additionalProperties": false,
+                "description": "Snippet fields for a playlistImage resource.",
+                "properties": {
+                  "height": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "playlistId": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "type": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "width": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  }
+                },
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "type": "object"
+      },
+      "image_file_path": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "image_body",
+      "image_file_path"
+    ],
+    "type": "object"
+  },
+  "youtube_playlistItems_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_playlistItems_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "item_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "item_body"
+    ],
+    "type": "object"
+  },
+  "youtube_playlistItems_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "default": 5,
+        "type": "integer"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "default": "snippet,contentDetails",
+        "type": "string"
+      },
+      "playlist_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_playlistItems_update": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "item_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "item_body"
+    ],
+    "type": "object"
+  },
+  "youtube_playlists_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_playlists_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "playlist_body": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "playlist_body"
+    ],
+    "type": "object"
+  },
+  "youtube_playlists_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "hl": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "default": 5,
+        "type": "integer"
+      },
+      "mine": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "default": "snippet,contentDetails",
+        "type": "string"
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_playlists_update": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "playlist_body": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "playlist_body"
+    ],
+    "type": "object"
+  },
+  "youtube_reporting_jobs_create": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "job_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "job_body"
+    ],
+    "type": "object"
+  },
+  "youtube_reporting_jobs_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "job_id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "job_id"
+    ],
+    "type": "object"
+  },
+  "youtube_reporting_jobs_get": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "job_id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "job_id"
+    ],
+    "type": "object"
+  },
+  "youtube_reporting_jobs_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "include_system_managed": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_size": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_reporting_reportTypes_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "include_system_managed": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_size": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_reporting_reports_download": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "download_url": {
+        "type": "string"
+      },
+      "output_path": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "download_url",
+      "output_path"
+    ],
+    "type": "object"
+  },
+  "youtube_reporting_reports_get": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "job_id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "report_id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "job_id",
+      "report_id"
+    ],
+    "type": "object"
+  },
+  "youtube_reporting_reports_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "created_after": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "job_id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_size": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "start_time_at_or_after": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "start_time_before": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "job_id"
+    ],
+    "type": "object"
+  },
+  "youtube_reporting_wait_for_next_report": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "job_id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "poll_interval_seconds": {
+        "default": 300,
+        "type": "integer"
+      },
+      "since": {
+        "type": "string"
+      },
+      "timeout_seconds": {
+        "default": 86400,
+        "type": "integer"
+      }
+    },
+    "required": [
+      "account",
+      "job_id",
+      "since"
+    ],
+    "type": "object"
+  },
+  "youtube_search_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "channel_type": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "event_type": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "for_content_owner": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "for_developer": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "for_mine": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "location": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "location_radius": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "default": 5,
+        "type": "integer"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "order": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "published_after": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "published_before": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "q": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "region_code": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "relevance_language": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "safe_search": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "topic_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "type": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_caption": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_category_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_definition": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_dimension": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_duration": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_embeddable": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_license": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_paid_product_placement": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_syndicated": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_type": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_subscriptions_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_subscriptions_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "part": {
+        "type": "string"
+      },
+      "subscription_body": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "subscription_body"
+    ],
+    "type": "object"
+  },
+  "youtube_subscriptions_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "for_channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "default": 5,
+        "type": "integer"
+      },
+      "mine": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "my_recent_subscribers": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "my_subscribers": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "order": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_superChatEvents_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "hl": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "default": 5,
+        "type": "integer"
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_third_party_links_delete": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "external_channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "linking_token": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "linking_token",
+      "type"
+    ],
+    "type": "object"
+  },
+  "youtube_third_party_links_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "external_channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "link_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "link_body"
+    ],
+    "type": "object"
+  },
+  "youtube_third_party_links_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "external_channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "linking_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "default": "snippet,status,linkingToken",
+        "type": "string"
+      },
+      "type": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_third_party_links_update": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "external_channel_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "link_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "part": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "link_body"
+    ],
+    "type": "object"
+  },
+  "youtube_thumbnails_set": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "image_file_path": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "video_id",
+      "image_file_path"
+    ],
+    "type": "object"
+  },
+  "youtube_videoAbuseReportReasons_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "hl": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "default": "snippet",
+        "type": "string"
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_videoCategories_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "hl": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "default": "snippet",
+        "type": "string"
+      },
+      "region_code": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account"
+    ],
+    "type": "object"
+  },
+  "youtube_videoTrainability_get": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_videos_getRating": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "id"
+    ],
+    "type": "object"
+  },
+  "youtube_videos_insert": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "file_path": {
+        "type": "string"
+      },
+      "notify_subscribers": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner_channel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "video_body": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "video_body",
+      "file_path"
+    ],
+    "type": "object"
+  },
+  "youtube_videos_list": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "chart": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "hl": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_height": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_results": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "max_width": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "mine": {
+        "default": false,
+        "type": "boolean"
+      },
+      "my_rating": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "page_token": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "region_code": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "video_category_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "part"
+    ],
+    "type": "object"
+  },
+  "youtube_videos_rate": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "rating": {
+        "enum": [
+          "like",
+          "dislike",
+          "none"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "account",
+      "id",
+      "rating"
+    ],
+    "type": "object"
+  },
+  "youtube_videos_reportAbuse": {
+    "additionalProperties": false,
+    "properties": {
+      "abuse_report_body": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "account": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "abuse_report_body"
+    ],
+    "type": "object"
+  },
+  "youtube_videos_update": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "part": {
+        "type": "string"
+      },
+      "video_body": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    },
+    "required": [
+      "account",
+      "part",
+      "video_body"
+    ],
+    "type": "object"
+  },
+  "youtube_watermarks_set": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "channel_id": {
+        "type": "string"
+      },
+      "image_file_path": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "watermark_body": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    },
+    "required": [
+      "account",
+      "channel_id",
+      "watermark_body",
+      "image_file_path"
+    ],
+    "type": "object"
+  },
+  "youtube_watermarks_unset": {
+    "additionalProperties": false,
+    "properties": {
+      "account": {
+        "type": "string"
+      },
+      "channel_id": {
+        "type": "string"
+      },
+      "on_behalf_of_content_owner": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "account",
+      "channel_id"
+    ],
+    "type": "object"
+  }
+}
